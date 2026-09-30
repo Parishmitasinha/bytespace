@@ -13,6 +13,7 @@ import {
   X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import ByteSpaceBrandLogo from "@/components/ui/bytespace-brand-logo";
 
 export type ByteSpaceCreatorRoute =
   | "/"
@@ -154,59 +155,12 @@ function ElectricHeroGrid() {
   );
 }
 
-// Internal sub-component: ByteSpace Logo
-function ByteSpaceLogo({
-  light = false,
-  onClick,
-}: {
-  light?: boolean;
-  onClick?: () => void;
-}) {
-  return (
-    <a
-      href="/"
-      onClick={(e) => {
-        if (onClick) {
-          e.preventDefault();
-          onClick();
-        }
-      }}
-      className="inline-flex items-center gap-2.5 focus-visible:outline-none"
-    >
-      <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#C8FF00]">
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M4 6.5C4 5.11929 5.11929 4 6.5 4H13.5C16.5376 4 19 6.46243 19 9.5C19 11.2356 18.1972 12.7834 16.9453 13.7891C18.7457 14.6962 20 16.5656 20 18.75C20 20.5449 18.5449 22 16.75 22H6.5C5.11929 22 4 20.8807 4 19.5V6.5Z"
-            fill="#252525"
-          />
-          <circle cx="11.5" cy="9.5" r="2.2" fill="#C8FF00" />
-          <circle cx="12.5" cy="16.5" r="2.2" fill="#C8FF00" />
-        </svg>
-      </span>
-      <span
-        className={cn(
-          "text-[18px] font-bold tracking-tight",
-          light ? "text-[#FFFFFF]" : "text-[#252525]"
-        )}
-      >
-        ByteSpace
-      </span>
-    </a>
-  );
-}
-
 // Internal sub-component: Overlapping Avatar Circles + Neon-Lime "26+" Badge
 function StudentAvatarsBadge() {
   const avatars = [
     "/src/assets/images/hero_student_creator_1790632518202.jpg",
-    "/src/assets/images/creator_female_instructor_1790632544714.jpg",
-    "/src/assets/images/growth_student_laptop_1790632531469.jpg",
+    "/src/assets/images/Image(2).png",
+    "/src/assets/images/growth_student_lapreator_female_instructor_1790632544714.jpgtop_1790632531469.jpg",
   ];
 
   return (
@@ -369,7 +323,7 @@ export default function ByteSpaceCreatorProfile({
         {/* 1. HEADER */}
         <header className="relative z-20 mx-auto flex max-w-[1200px] items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
           {/* LEFT: ByteSpace Logo */}
-          <ByteSpaceLogo light onClick={() => handleNavigate("/")} />
+          <ByteSpaceBrandLogo light onClick={() => handleNavigate("/")} />
 
           {/* CENTER: Home, Courses, Creators */}
           <nav
@@ -503,7 +457,7 @@ export default function ByteSpaceCreatorProfile({
           {/* 2. Creator Identity: Rounded-square profile image + PurePearl Studio + Creator badge + subtitle */}
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <img
-              src="/src/assets/images/creator_female_instructor_1790632544714.jpg"
+              src="/src/assets/images/Image (2).png"
               alt="PurePearl Studio"
               referrerPolicy="no-referrer"
               className="h-16 w-16 shrink-0 rounded-[14px] object-cover sm:h-[72px] sm:w-[72px]"
@@ -750,7 +704,7 @@ export default function ByteSpaceCreatorProfile({
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
             {/* LEFT SIDE: ByteSpace Logo + Newsletter */}
             <div className="lg:col-span-5">
-              <ByteSpaceLogo onClick={() => handleNavigate("/")} />
+              <ByteSpaceBrandLogo onClick={() => handleNavigate("/")} />
               <p className="mt-4 max-w-sm text-[13px] leading-relaxed text-[#252525]/70">
                 Stay Up to date with our latest features and releases by joining
                 our newsletter.

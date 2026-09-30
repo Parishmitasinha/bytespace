@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
+import ByteSpaceBrandLogo from "@/components/ui/bytespace-brand-logo";
 
 export interface ByteSpaceSignupProps {
   className?: string;
@@ -22,46 +23,6 @@ function TechnicalGridBackground() {
       }}
       aria-hidden="true"
     />
-  );
-}
-
-// Internal sub-component: Small Understated ByteSpace Logo
-function ByteSpaceBrandMark({
-  onClick,
-}: {
-  onClick?: () => void;
-}) {
-  return (
-    <a
-      href="/"
-      onClick={(e) => {
-        if (onClick) {
-          e.preventDefault();
-          onClick();
-        }
-      }}
-      className="inline-flex items-center gap-2 focus-visible:outline-none"
-    >
-      <span className="flex h-6 w-6 items-center justify-center rounded-md bg-[#C8FF00]">
-        <svg
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M4 6.5C4 5.11929 5.11929 4 6.5 4H13.5C16.5376 4 19 6.46243 19 9.5C19 11.2356 18.1972 12.7834 16.9453 13.7891C18.7457 14.6962 20 16.5656 20 18.75C20 20.5449 18.5449 22 16.75 22H6.5C5.11929 22 4 20.8807 4 19.5V6.5Z"
-            fill="#252525"
-          />
-          <circle cx="11.5" cy="9.5" r="2.2" fill="#C8FF00" />
-          <circle cx="12.5" cy="16.5" r="2.2" fill="#C8FF00" />
-        </svg>
-      </span>
-      <span className="text-[17px] font-bold tracking-tight text-[#FFFFFF]">
-        ByteSpace
-      </span>
-    </a>
   );
 }
 
@@ -356,7 +317,7 @@ export default function ByteSpaceSignup({
           <div>
             {/* 4. BYTE SPACE LOGO */}
             <div>
-              <ByteSpaceBrandMark onClick={() => handleNavigate("/")} />
+              <ByteSpaceBrandLogo light onClick={() => handleNavigate("/")} />
             </div>
 
             {/* 5. LEFT INTRODUCTION */}

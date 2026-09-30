@@ -24,6 +24,7 @@ import {
   Play,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import ByteSpaceBrandLogo from "@/components/ui/bytespace-brand-logo";
 
 export type ByteSpaceHomeRoute =
   | "/"
@@ -257,42 +258,6 @@ const TESTIMONIALS = [
   },
 ];
 
-// Internal sub-component: Brand Logo matching Hero_Frame.png
-function BrandLogo({ light = false }: { light?: boolean }) {
-  return (
-    <a
-      href="#top"
-      className="inline-flex items-center gap-2 focus-visible:outline-none"
-    >
-      <svg
-        width="30"
-        height="26"
-        viewBox="0 0 30 26"
-        fill="none"
-        aria-hidden="true"
-        className="shrink-0"
-      >
-        {/* Left vertical rounded stem */}
-        <rect x="1" y="1" width="6.5" height="22" rx="3.25" fill="#C6FF00" />
-        {/* Right circular loop with play cutout */}
-        <circle cx="17.5" cy="14.5" r="9.5" fill="#C6FF00" />
-        <path
-          d="M15.2 10.8L21.2 14.5L15.2 18.2V10.8Z"
-          fill={light ? "#0A36E8" : "#0B1021"}
-        />
-      </svg>
-      <span
-        className={cn(
-          "text-[20px] font-extrabold tracking-tight",
-          light ? "text-[#FFFFFF]" : "text-[#0B1021]"
-        )}
-      >
-        ByteSpace
-      </span>
-    </a>
-  );
-}
-
 // Internal sub-component: Subtle Hero & CTA Grid Pattern matching Hero_Frame.png
 function ElectricGridPattern() {
   return (
@@ -326,7 +291,7 @@ export function HeroNavbar({
     <>
       <header className="relative z-30 mx-auto flex max-w-[1200px] items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
         {/* Left: ByteSpace Logo */}
-        <BrandLogo light />
+        <ByteSpaceBrandLogo light />
 
         {/* Center Navigation Links: Home, Courses, Creators */}
         <nav
@@ -1124,7 +1089,7 @@ export default function ByteSpaceHomepage({
             >
               <div className="relative flex h-[340px] w-[290px] items-end justify-center overflow-hidden rounded-t-full sm:h-[430px] sm:w-[350px]">
                 <img
-                  src="/src/assets/images/student_headphones_laptop_1790704589706.jpg"
+                  src="/src/assets/images/Image.png"
                   alt="Student wearing headphones holding a laptop"
                   referrerPolicy="no-referrer"
                   className="h-full w-full object-cover object-top"
@@ -1377,7 +1342,7 @@ export default function ByteSpaceHomepage({
               {/* Main Student Portrait Image (In Front) */}
               <div className="relative z-10 mx-auto max-w-md overflow-hidden rounded-2xl border border-[#E2E8F0] bg-[#FFFFFF] shadow-md">
                 <img
-                  src="/src/assets/images/growth_student_laptop_1790632531469.jpg"
+                  src="/src/assets/images/Image.png"
                   alt="Student building practical skills on a laptop"
                   referrerPolicy="no-referrer"
                   className="aspect-[4/3] w-full object-cover"
@@ -1424,7 +1389,7 @@ export default function ByteSpaceHomepage({
               {/* Main Instructor Image */}
               <div className="relative mx-auto max-w-md overflow-hidden rounded-2xl border border-[#E2E8F0] bg-[#FFFFFF] shadow-md">
                 <img
-                  src="/src/assets/images/creator_female_instructor_1790632544714.jpg"
+                  src="/src/assets/images/creator.png"
                   alt="Female course creator holding a digital tablet"
                   referrerPolicy="no-referrer"
                   className="aspect-[4/3] w-full object-cover"
@@ -1641,7 +1606,7 @@ export default function ByteSpaceHomepage({
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
             {/* Left Side: Logo, Description, Email Subscription */}
             <div className="lg:col-span-5">
-              <BrandLogo />
+              <ByteSpaceBrandLogo />
               <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#64748B]">
                 Stay Up to date with our latest features and releases by joining
                 our newsletter.
