@@ -1,0 +1,8 @@
+{
+  "name": "Bytespace",
+  "description": "Custom UI component workspace powered by TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, and Lucide React.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
