@@ -92,7 +92,7 @@ const COURSES: CourseItem[] = [
     price: 49,
     lessons: 24,
     duration: "6h 40m",
-    image: "/src/assets/images/course_figma_basics_1790632556720.jpg",
+    image: "/images/course_figma_basics_1790632556720.jpg",
     avatarColors: ["#1D44F9", "#0B1021", "#10B981"],
   },
   {
@@ -108,7 +108,7 @@ const COURSES: CourseItem[] = [
     price: 59,
     lessons: 19,
     duration: "5h 15m",
-    image: "/src/assets/images/course_digital_assets_1790632569383.jpg",
+    image: "/images/course_digital_assets_1790632569383.jpg",
     avatarColors: ["#6366F1", "#EC4899", "#0B1021"],
   },
   {
@@ -124,7 +124,7 @@ const COURSES: CourseItem[] = [
     price: 69,
     lessons: 32,
     duration: "9h 20m",
-    image: "/src/assets/images/course_big_data_1790632580143.jpg",
+    image: "/images/course_big_data_1790632580143.jpg",
     avatarColors: ["#0EA5E9", "#1D44F9", "#334155"],
   },
   {
@@ -140,7 +140,7 @@ const COURSES: CourseItem[] = [
     price: 39,
     lessons: 16,
     duration: "4h 10m",
-    image: "/src/assets/images/course_productivity_1790632590389.jpg",
+    image: "/images/course_productivity_1790632590389.jpg",
     avatarColors: ["#10B981", "#1D44F9", "#475569"],
   },
   {
@@ -156,7 +156,7 @@ const COURSES: CourseItem[] = [
     price: 54,
     lessons: 21,
     duration: "6h 05m",
-    image: "/src/assets/images/course_money_management_1790632602238.jpg",
+    image: "/images/course_money_management_1790632602238.jpg",
     avatarColors: ["#0B1021", "#1D44F9", "#059669"],
   },
   {
@@ -172,7 +172,7 @@ const COURSES: CourseItem[] = [
     price: 79,
     lessons: 28,
     duration: "8h 45m",
-    image: "/src/assets/images/course_startup_success_1790632614991.jpg",
+    image: "/images/course_startup_success_1790632614991.jpg",
     avatarColors: ["#1D44F9", "#7C3AED", "#0B1021"],
   },
 ];
@@ -243,7 +243,7 @@ const TESTIMONIALS = [
     initials: "JL",
     avatarBg: "#E0E7FF",
     avatarText: "#1E40AF",
-    image: "/src/assets/images/growth_student_laptop_1790632531469.jpg",
+    image: "/images/growth_student_laptop_1790632531469.jpg",
   },
   {
     id: "alex",
@@ -254,7 +254,7 @@ const TESTIMONIALS = [
     initials: "AB",
     avatarBg: "#ECFCCB",
     avatarText: "#365314",
-    image: "/src/assets/images/hero_student_creator_1790632518202.jpg",
+    image: "/images/hero_student_creator_1790632518202.jpg",
   },
 ];
 
@@ -1089,7 +1089,7 @@ export default function ByteSpaceHomepage({
             >
               <div className="relative flex h-[340px] w-[290px] items-end justify-center overflow-hidden rounded-t-full sm:h-[430px] sm:w-[350px]">
                 <img
-                  src="/src/assets/images/Image.png"
+                  src="/images/Image.png"
                   alt="Student wearing headphones holding a laptop"
                   referrerPolicy="no-referrer"
                   className="h-full w-full object-cover object-top"
@@ -1342,7 +1342,7 @@ export default function ByteSpaceHomepage({
               {/* Main Student Portrait Image (In Front) */}
               <div className="relative z-10 mx-auto max-w-md overflow-hidden rounded-2xl border border-[#E2E8F0] bg-[#FFFFFF] shadow-md">
                 <img
-                  src="/src/assets/images/Image.png"
+                  src="/images/Image.png"
                   alt="Student building practical skills on a laptop"
                   referrerPolicy="no-referrer"
                   className="aspect-[4/3] w-full object-cover"
@@ -1389,7 +1389,7 @@ export default function ByteSpaceHomepage({
               {/* Main Instructor Image */}
               <div className="relative mx-auto max-w-md overflow-hidden rounded-2xl border border-[#E2E8F0] bg-[#FFFFFF] shadow-md">
                 <img
-                  src="/src/assets/images/creator.png"
+                  src="/images/creator.png"
                   alt="Female course creator holding a digital tablet"
                   referrerPolicy="no-referrer"
                   className="aspect-[4/3] w-full object-cover"
