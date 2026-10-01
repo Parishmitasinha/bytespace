@@ -232,7 +232,7 @@ const TESTIMONIALS = [
     initials: "SM",
     avatarBg: "#DBEAFE",
     avatarText: "#1D44F9",
-    image: "/src/assets/images/creator_female_instructor_1790632544714.jpg",
+    image: "/images/creator_female_instructor_1790632544714.jpg",
   },
   {
     id: "james",
@@ -243,7 +243,7 @@ const TESTIMONIALS = [
     initials: "JL",
     avatarBg: "#E0E7FF",
     avatarText: "#1E40AF",
-    image: "/images/growth_student_laptop_1790632531469.jpg",
+    image: "/images/rename.jpg",
   },
   {
     id: "alex",
@@ -683,12 +683,12 @@ export function HeroFloatingCards({
   onNavigate: (path: ByteSpaceHomeRoute) => void;
 }) {
   const studentAvatars = [
-    "/src/assets/images/hero_student_creator_1790632518202.jpg",
-    "/src/assets/images/creator_female_instructor_1790632544714.jpg",
-    "/src/assets/images/growth_student_laptop_1790632531469.jpg",
-    "/src/assets/images/course_figma_basics_1790632556720.jpg",
-    "/src/assets/images/course_productivity_1790632590389.jpg",
-    "/src/assets/images/course_startup_success_1790632614991.jpg",
+    "/images/hero_student_creator_1790632518202.jpg",
+    "/images/creator_female_instructor_1790632544714.jpg",
+    "/images/growth_student_laptop_1790632531469.jpg",
+    "/images/course_figma_basics_1790632556720.jpg",
+    "/images/course_productivity_1790632590389.jpg",
+    "/images/course_startup_success_1790632614991.jpg",
   ];
 
   return (
